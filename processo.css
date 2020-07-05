@@ -1,0 +1,471 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color:#f1f1ef;
+    position: absolute;
+    overflow-x: hidden;
+    margin-left: 0;
+    left: 0;
+}
+
+
+#setinha {
+    position: fixed;
+    width: 10px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.section {
+    height: auto;
+    background-color:none;
+    display: absolute;
+    margin-bottom:7%;
+    overflow-x: hidden;
+    scroll-behavior: none;
+
+}
+
+.section p{
+    background-color: none;
+    display: block;
+    position: static;
+    margin-left: 55%;
+    margin-top: 2%;
+    top: 0;
+    width: 28%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+
+.section h1 {
+    background-color:none;
+    display: absolute;
+    left: 0;
+    margin-left: 55%;
+    width: 28%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+.section h2 {
+    background-color:none;
+    position: absolute;
+    left: 0;
+    margin-left: 55%;
+    margin-top: -1%;
+    width: 28%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5%;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+     overflow: hidden;
+     /* Enable scroll if needed */
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #f1f1ef;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    
+}
+.modal-header {
+    position: fixed;
+    margin-left: 78%;
+    margin-bottom: 20px;
+}
+.modal-body {
+    margin-top: 5%;
+}
+
+.modal-content h1{
+    background-color:none;
+    position: flex;
+    left: 0;
+    margin-left: 50%;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+.modal-content h2{
+    background-color:none;
+    position: flex;
+    left: 0;
+    margin-left: 50%;
+    margin-top: -1%;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+}
+
+.modal-content p{
+    background-color:none;
+    position: flex;
+    left: 0;
+    margin-left: 50%;
+    margin-top: 4%;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+}
+
+
+.images {
+    background-color: none;
+    display: inline-block;
+    position: fixed;
+    width: 30%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-button{
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding-top: 10px;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    color: #3d3d3f;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        
+}
+    
+.modal-button:hover,
+.modal-button:focus {
+    background: none;
+    font-weight: bold;
+    font-style: italic;
+}
+    
+.modal-button:focus {
+    outline: none;
+    outline-offset: -4px;
+    font-style: italic;
+}
+    
+.modal-button:active {
+    transform: scale(0.99);
+}
+
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 80vh;
+    display: flex;
+}  
+.card {
+    display: inline;
+    top: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color:none;
+}
+
+.card p{
+    background-color:none;
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    top: 0;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+
+.card h1 {
+    background-color:none;
+    display: block;
+    position: static;
+    left: 0;
+    margin-left: 32.5%;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+.card h2 {
+    background-color:none;
+    display: block;
+    position: static;
+    left: 0;
+    margin-left: 32.5%;
+    margin-top: -3%;
+    margin-bottom: 8%;
+    width: 35%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+}
+
+
+.section2 {
+    height: auto;
+    background-color: none;
+    display: absolute;
+    margin-bottom:25%;
+    margin-top: 25%;
+
+}
+
+.section2 p{
+    background-color:none;
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    top: 0;
+    width: 100%;
+    height: auto;
+    color: #3d3d3f;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}
+
+
+#ofilme{
+    top: 0;
+    margin-top: 7%;
+    padding-bottom: 4%;
+}
+
+
+#rebecca{
+    margin-left: 5%;
+}
+#chairs{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+#laura{
+    margin-top: 12.8%;
+    margin-left: 300px;
+    padding-left: 100px;
+}
+
+.ladoalado{
+    display: inline-flex;
+    width: 100%;
+    margin-left: -320px;
+
+}
+
+.ladoalado img {
+ display: block;
+ width: 140px;
+ height: auto;
+ margin-right: 100px;
+ background-color: none;
+ padding-top: 24px;
+}
+
+
+#small{
+    margin-top: 22%;
+}
+
+#thepast{
+    margin-top: 12.8%;
+}
+
+
+#vinte {
+    margin-top: 12.8%;
+}
+
+#guerra {
+    margin-top: 12.8%;
+    margin-right: 300px;
+    padding-right: 350px;
+}
+
+#fred {
+    margin-left: 10%;
+}
+
+
+#voltar {
+    display: flex;
+    position: static;
+    margin-left: 95%;
+}
+
+.modal-button2{
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding-top: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    color: #3d3d3f;
+    font-family: 'EB Garamond', serif;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        
+}
+    
+.modal-button2:hover,
+.modal-button2:focus {
+    background: none;
+}
+    
+.modal-button2:focus {
+    outline: none;
+    outline-offset: -4px;
+}
+    
+.modal-button2:active {
+    transform: scale(0.99);
+}
+
+
+
+#col {
+    width: 220px;
+    background-color: none;
+    margin-right: -6%;
+}
+
+#adapt1 {
+    margin-top: 12.8%;
+}
+
+
+
+
+
+
+#fullvideo {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+
+.card2 {
+    display: inline-block;
+    top: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color:none;
+    width: 100%;
+}
+
+.card2 p{
+    background-color:none;
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    top: 0;
+    height: auto;
+    color: #3d3d3f;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+
+
+.site-footer {
+    background: none;
+    height: 15%;
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+}

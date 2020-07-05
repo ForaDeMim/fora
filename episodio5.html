@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fora de mim</title>
+    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="audioplayer.css">
+    <script src="ep1.js"></script>
+    <link rel="icon" type="image/png" href="icon-24.png">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+
+    <div class="setinha">
+        <a href="radionovela.html">
+        <img id=setinha src="setinha-25.png">
+        </a>
+    </div>
+
+
+    <div class="folhetim">
+        <a href="FOLHETIM_5.pdf" download class="button2" style="font-family: 'EB Garamond', serif; font-size: 15px;">folhetim</a>
+    </div>
+
+    <div id="bg5">
+            <img id="t_ep" src="t_ep5.png">
+        <div id="player">
+            <div id="buttons">
+                <button id="play" onclick="playOrPauseSong()"><img src="play-39.png"/></button>
+            </div>
+        
+            <div id="seek-bar">
+                <div id="fill"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    
+    var songs = ["EP_5.mp3"]
+    
+    var fillBar = document.getElementById("fill");
+    
+    var song = new Audio();
+    var currentSong = 0;    // it point to the current song
+    
+    window.onload = playSong;   // it will call the function playSong when window is load
+    
+    function playSong(){
+        
+        song.src = songs[currentSong];  //set the source of 0th song 
+        
+        songTitle.textContent = songs[currentSong]; // set the title of song
+        
+        song.play();    // play the song
+    }
+    
+    function playOrPauseSong(){
+        
+        if(song.paused){
+            song.play();
+            $("#play img").attr("src","pause-40.png");
+        }
+        else{
+            song.pause();
+            $("#play img").attr("src","play-39.png");
+        }
+    }
+    
+    song.addEventListener('timeupdate',function(){ 
+        
+        var position = song.currentTime / song.duration;
+        
+        fillBar.style.width = position * 100 +'%';
+    });
+    
+
+    
+</script>
+
+</html>

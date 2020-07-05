@@ -1,0 +1,112 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+  
+.bg {
+    background-image: url(imagemfundo-20.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bg1 {
+    background-image: url("bg1.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg2 {
+    background-image: url("bg2.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg3 {
+    background-image: url("bg3.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg4 {
+    background-image: url("bg4.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg5 {
+    background-image: url("bg5.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg6 {
+    background-image: url("bg6.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#setinha {
+    position: fixed;
+    width: 15px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 35px;
+    display: inline-block;
+}
+
+#t_ep{
+    position: static;
+    width: auto;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
+    display: flex;
+}
+
+.folhetim{
+    position: absolute;
+    top: 75%;
+    left: 46.5%;
+}
+
+
+.button2 {
+    background-color: none;
+    border: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: thin;
+    color: rgb(255, 255, 255);
+    padding: 9% 45%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+}
+
+.button2:hover { background-color: rgba(255, 255, 255, 0.479); text-decoration: white;}
+

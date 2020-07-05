@@ -1,0 +1,60 @@
+#player{
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 40%;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    color:#333;
+    padding-top: 100px;
+    background-color:none;
+}
+
+#buttons{
+    height: 10px;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#play{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background-color: rgba(26, 26, 26, 0);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -600%;
+    margin-top: 5px;
+    transform: translate(-50%,-50%);
+}
+
+#play img{
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seek-bar{
+    width: 1200%;
+    height: 6px;
+    background-color:gray;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    border-radius: 50px;
+}
+#fill{
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 20px;
+}
